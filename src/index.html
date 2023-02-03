@@ -1,0 +1,70 @@
+<!--
+File: index.html
+Author: Tóth Fedor László
+Copyright: 2023, Tóth Fedor László
+Group: Szoft I-2-E
+Date: 2023.02.03
+Github: https://github.com/TothFL/
+Licenc: GNU GPL
+-->
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="oldal">
+
+        <h1>
+           Trapéz területszámítás
+        </h1>
+        
+        <h2>
+            Feladat 0316
+        </h2>
+
+        <div class="mt-3">
+            <input type="text" placeholder="Sugár (R)" class="form-control" id="sugarR">
+        </div>
+        
+        <div class="mt-3">
+            <input type="text" placeholder="Sugár (r)" class="form-control" id="sugarr">
+        </div>
+        
+        <div class="mt-3">
+            <input type="text" placeholder="Magasság (m)" class="form-control" id="magassag">
+        </div>
+
+        <button class="button-1" id="szamitGomb">
+            Számítás
+        </button>
+
+        <button class="button-1" id="torolGomb">
+            Törlés
+        </button>
+
+        <div class="mt-3">
+            <label for="area" class="form-label">
+                Térfogat
+            </label>
+            <input type="text" readonly class="form-control" id="terulet">
+        </div>
+
+    </div>
+
+    
+
+    <div class="about text-center"> 
+        Tóth Fedor László, 2023-02-03, Soft I-2-E
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
