@@ -18,11 +18,15 @@ const emptyButton = document.querySelector("#torolGomb");
 const volume = document.querySelector("#terfogat");
 
 calcButton.addEventListener('click', ()=>{
-    radiusR = Number(document.querySelector("#sugarR").value);
-    radiusr = Number(document.querySelector("#sugarr").value);
-    height = Number(document.querySelector("#magassag").value);
+    radiusRKalk = Number(radiusR.value);
+    radiusrKalk = Number(radiusr.value);
+    heightKalk = Number(height.value);
 
-    volume.value=parseFloat(calcTerf(radiusR, radiusr, height)).toFixed(3);
+    if(radiusRKalk==0||radiusrKalk==0||heightKalk==0){
+        alert("Hibás adatok!")
+    } else {
+        volume.value=parseFloat(calcTerf(radiusRKalk, radiusrKalk, heightKalk)).toFixed(3);
+    }
 });
 
 emptyButton.addEventListener('click', ()=>{
